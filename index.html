@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>SYSTEME SCOLAIRE AL AFAK</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Système scolaire al afak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Système scolaire al afak</h1>
+
+  <div id="roleSection" class="card">
+    <p>Êtes-vous Professeur ou Élève ?</p>
+    <button id="profBtn" class="btn">Professeur</button>
+    <button id="eleveBtn" class="btn">Élève</button>
+  </div>
+
+  <!-- Section Professeur -->
+  <div id="profSection" class="hidden card">
+    <p>Entrez le code Professeur :</p>
+    <input type="text" id="profCode" placeholder="Code professeur" class="input">
+    <button id="validateProf" class="btn">Valider</button>
+    <p id="profError" class="error hidden">Code incorrect.</p>
+
+    <div id="profTable" class="hidden">
+      <h2>Tableau des élèves</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom et Prénom</th>
+            <th>Date de naissance</th>
+            <th>Code</th>
+            <th>Note</th>
+            <th>Appréciation</th>
+            <th>État</th>
+          </tr>
+        </thead>
+        <tbody id="profBody"></tbody>
+      </table>
+
+      <h3>Créer un nouvel élève</h3>
+      <input type="text" id="newEleveNom" placeholder="Nom et Prénom" class="input">
+      <input type="date" id="newEleveDate" class="input">
+      <input type="text" id="newEleveCode" placeholder="Code sécurisé" class="input">
+      <button id="createEleve" class="btn">Créer</button>
+    </div>
+  </div>
+
+  <!-- Section Élève -->
+  <div id="eleveSection" class="hidden card">
+    <p>Connexion Élève :</p>
+    <input type="text" id="eleveNom" placeholder="Nom et Prénom" class="input">
+    <input type="text" id="eleveCode" placeholder="Code sécurisé" class="input">
+    <button id="validateEleve" class="btn">Se connecter</button>
+    <p id="eleveError" class="error hidden">Nom ou code incorrect.</p>
+    <div id="eleveTable" class="hidden">
+      <h2>Votre fiche</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom et Prénom</th>
+            <th>Date de naissance</th>
+            <th>Note</th>
+            <th>Appréciation</th>
+            <th>État</th>
+          </tr>
+        </thead>
+        <tbody id="eleveBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
