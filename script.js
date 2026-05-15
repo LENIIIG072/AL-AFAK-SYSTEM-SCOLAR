@@ -64,7 +64,7 @@ createEleve.addEventListener("click", () => {
       dateNaissance: date,
       code: code,
       note: "",
-      app: "",
+      classe: "",
       etat: "Appris"
     };
     saveEleves();
